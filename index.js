@@ -11,7 +11,7 @@ app.get("/video", (req, res) => {
     if (err) {
       return res.status(500).json({
         status: "failed",
-        error: "Error reading video.json"
+        error: "Error reading album.json"
       });
     }
 
@@ -20,7 +20,7 @@ app.get("/video", (req, res) => {
       if (!Array.isArray(videos) || videos.length === 0) {
         return res.status(500).json({
           status: "failed",
-          error: "No videos found in video.json"
+          error: "No videos found in album.json"
         });
       }
 
@@ -30,8 +30,8 @@ app.get("/video", (req, res) => {
         status: "success",
         url: randomVideo,
         author: {
-          Name: "MR᭄﹅ MAHABUB﹅ メꪜ",
-          Facebook: "https://www.facebook.com/www.xnxx.com140"
+          Name: "MOHAMMAD JUBAYER",
+          Facebook: "https://www.facebook.com/profile.php?id=61573052122735"
         }
       };
 
