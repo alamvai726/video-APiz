@@ -5,7 +5,7 @@ const fs = require("fs");
 const app = express();
 
 app.get("/video", (req, res) => {
-  const videoFilePath = path.join(__dirname, "video.json");
+  const videoFilePath = path.join(__dirname, "album.json");
 
   fs.readFile(videoFilePath, "utf8", (err, videoData) => {
     if (err) {
